@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Murshida ADura | Authentic Ethiopian Cuisine</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fffdf8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(20,20,20,0.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+}
+
+.logo{
+    color:#f8c146;
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#f8c146;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#f8c146;
+    color:#111;
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#ffd970;
+}
+
+/* Sections */
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    color:#222;
+}
+
+.section-title p{
+    color:#777;
+}
+
+/* Menu Cards */
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.price{
+    color:#c89000;
+    font-weight:700;
+    font-size:1.1rem;
+}
+
+/* About */
+.about{
+    background:#f7f2e9;
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text h3{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    max-width:700px;
+    margin:auto;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.8rem;
+}
+
+.about-content{
+    grid-template-columns:1fr;
+}
+
+nav ul{
+    display:none;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Murshida ADura</div>
+
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Authentic Ethiopian Flavors</h1>
+        <p>
+            Experience traditional Ethiopian cuisine crafted with
+            passion, fresh ingredients, and generations of culinary heritage.
+        </p>
+
+        <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+</section>
+
+<section id="menu">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Popular Dishes</h2>
+            <p>Traditional Ethiopian favorites loved by our customers</p>
+        </div>
+
+        <div class="menu-grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80">
+                <div class="card-content">
+                    <h3>Doro Wat</h3>
+                    <p>Slow-cooked chicken stew with Ethiopian spices and injera.</p>
+                    <div class="price">250 ETB</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80">
+                <div class="card-content">
+                    <h3>Tibs</h3>
+                    <p>Sautéed beef with onions, peppers, and aromatic herbs.</p>
+                    <div class="price">280 ETB</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80">
+                <div class="card-content">
+                    <h3>Vegetarian Combo</h3>
+                    <p>Selection of Ethiopian vegan dishes served with injera.</p>
+                    <div class="price">220 ETB</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+
+        <div class="about-content">
+
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80">
+
+            <div class="about-text">
+                <h3>About Murshida ADura</h3>
+
+                <p>
+                    Murshida ADura celebrates the rich culinary traditions of
+                    Ethiopia. Our recipes combine authentic spices, fresh ingredients,
+                    and warm hospitality to create a memorable dining experience.
+                </p>
+
+                <br>
+
+                <p>
+                    Whether you're enjoying our famous Doro Wat,
+                    flavorful Tibs, or vegetarian specialties,
+                    every dish is prepared with care and tradition.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Visit Us</h2>
+            <p>We would love to serve you</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Murshida ADura Restaurant</h3>
+
+            <p>Addis Ababa, Ethiopia</p>
+            <p>📞 +251 9XX XXX XXX</p>
+            <p>✉ info@murshidaadura.com</p>
+
+            <a href="#" class="btn">Reserve a Table</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Murshida ADura. All Rights Reserved.
+</footer>
+
+</body>
+</html>
